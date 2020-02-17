@@ -32,8 +32,10 @@ const CartItem = props => {
 const styles = StyleSheet.create({
   cartItem: {
     padding: 10,
+
     backgroundColor: 'white',
     flexDirection: 'row',
+
     justifyContent: 'space-between',
     marginHorizontal: 20
   },

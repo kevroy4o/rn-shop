@@ -11,14 +11,14 @@ import CartScreen from '../screens/shop/CartScreen';
 import OrdersScreen from '../screens/shop/OrdersScreen';
 import Colors from '../constants/Colors';
 
-const defaultNavigationOptions = {
+const defaultNavOptions = {
   headerStyle: {
     backgroundColor: Platform.OS === 'android' ? Colors.primary : ''
   },
   headerTitleStyle: {
     fontFamily: 'open-sans-bold'
   },
-  headerBackTitle: {
+  headerBackTitleStyle: {
     fontFamily: 'open-sans'
   },
   headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
@@ -40,7 +40,7 @@ const ProductsNavigator = createStackNavigator(
         />
       )
     },
-    defaultNavigationOptions: defaultNavigationOptions
+    defaultNavigationOptions: defaultNavOptions
   }
 );
 
@@ -58,7 +58,7 @@ const OrdersNavigator = createStackNavigator(
         />
       )
     },
-    defaultNavigationOptions: defaultNavigationOptions
+    defaultNavigationOptions: defaultNavOptions
   }
 );
 

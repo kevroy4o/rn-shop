@@ -7,11 +7,12 @@ import HeaderButton from '../../components/UI/HeaderButton';
 
 const OrdersScreen = props => {
   const orders = useSelector(state => state.orders.orders);
+
   return (
     <FlatList
       data={orders}
       keyExtractor={item => item.id}
-      renderItem={itemData => <Text>{itemData.item}</Text>}
+      renderItem={itemData => <Text>{itemData.item.totalAmount}</Text>}
     />
   );
 };
